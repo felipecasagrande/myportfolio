@@ -1,29 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Felipe Casagrande</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Casagrande - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Logo Felipe Casagrande" class="logo" />
-    <h1>Felipe Casagrande</h1>
-    <p>Desenvolvedor Back-End / Tech Enthusiast</p>
+    <header>
+        <div class="container">
+            <!-- Adicione sua foto de perfil aqui -->
+            <!-- <img src="sua-foto.jpg" alt="Felipe Casagrande" class="profile-img"> -->
+            <h1>Felipe Casagrande</h1>
+            <p class="subtitle">Python Developer | Data Engineering</p>
+            <div class="contact-info">
+                <p>Belo Horizonte, Minas Gerais, Brazil</p>
+                <p>felipecasagrandematos@gmail.com</p>
+                <a href="https://github.com/felipecasagrande" target="_blank">GitHub</a>
+                <a href="https://linktree/felipecasagrande_" target="_blank">Linktree</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="links">
-      <a href="https://github.com/felipecasagrande/REPO1" target="_blank">Repositório 1</a>
-      <a href="https://github.com/felipecasagrande/REPO2" target="_blank">Repositório 2</a>
-      <a href="https://github.com/felipecasagrande/REPO3" target="_blank">Repositório 3</a>
-      <a href="https://github.com/felipecasagrande/REPO4" target="_blank">Repositório 4</a>
-      <a href="https://github.com/felipecasagrande/REPO5" target="_blank">Repositório 5</a>
-      <a href="https://github.com/felipecasagrande/REPO6" target="_blank">Repositório 6</a>
-    </div>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <p class="about-text">
+                Desenvolvedor Python com foco em Data Engineering. Apaixonado por tecnologia, 
+                análise de dados e soluções inovadoras. Atualmente desenvolvendo projetos 
+                envolvendo automação, APIs e processamento de dados.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <!-- Agendador WhatsApp -->
+                <div class="project-card">
+                    <h3>Agendador WhatsApp</h3>
+                    <p>Sistema de agendamento de mensagens para WhatsApp com automação.</p>
+                    <a href="https://github.com/felipecasagrande/agendador-whatsapp" target="_blank" class="project-link">
+                        Ver Projeto
+                    </a>
+                </div>
+
+                <!-- API Power BI Client -->
+                <div class="project-card">
+                    <h3>API Power BI Client</h3>
+                    <p>API para integração e clientes do Power BI com sistemas personalizados.</p>
+                    <a href="https://github.com/felipecasagrande/API-Power-BI-Client-Jadllson" target="_blank" class="project-link">
+                        Ver Projeto
+                    </a>
+                </div>
+
+                <!-- Curso em Vídeo Python -->
+                <div class="project-card">
+                    <h3>Exercícios Python - Curso em Vídeo</h3>
+                    <p>Repositório com exercícios do curso de Python do professor Gustavo Guanabara.</p>
+                    <a href="https://github.com/felipecasagrande/curso-em-video-exercicios-python" target="_blank" class="project-link">
+                        Ver Projeto
+                    </a>
+                </div>
+
+                <!-- Data Analysis & Machine Learning -->
+                <div class="project-card">
+                    <h3>Data Analysis & Machine Learning</h3>
+                    <p>Projetos de análise de dados e machine learning usando Jupyter Notebook.</p>
+                    <a href="https://github.com/felipecasagrande/Data-Analisys-Machine-Learning-" target="_blank" class="project-link">
+                        Ver Projeto
+                    </a>
+                </div>
+
+                <!-- One Billion Row Challenge -->
+                <div class="project-card">
+                    <h3>One Billion Row Challenge</h3>
+                    <p>Implementação do desafio de processamento de 1 bilhão de linhas usando Python.</p>
+                    <a href="https://github.com/felipecasagrande/One-Billion-Row-Challenge-Python" target="_blank" class="project-link">
+                        Ver Projeto
+                    </a>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project-card">
+                    <h3>My Portfolio</h3>
+                    <p>Este site portfolio desenvolvido para showcase de projetos e habilidades.</p>
+                    <a href="https://github.com/felipecasagrande/myportfolio" target="_blank" class="project-link">
+                        Ver Projeto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">Data Engineering</span>
+                <span class="skill-item">Jupyter Notebook</span>
+                <span class="skill-item">APIs</span>
+                <span class="skill-item">Power BI</span>
+                <span class="skill-item">Git</span>
+                <span class="skill-item">GitHub</span>
+                <span class="skill-item">HTML/CSS</span>
+                <span class="skill-item">Data Analysis</span>
+                <span class="skill-item">Machine Learning</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-content">
+                <p>Entre em contato comigo através dos canais abaixo:</p>
+                <div class="contact-links">
+                    <a href="mailto:felipecasagrandematos@gmail.com" class="project-link">
+                        E-mail
+                    </a>
+                    <a href="https://github.com/felipecasagrande" target="_blank" class="project-link">
+                        GitHub
+                    </a>
+                    <a href="https://linktree/felipecasagrande_" target="_blank" class="project-link">
+                        Linktree
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-      <p>© 2025 Felipe Casagrande</p>
+        <div class="container">
+            <p>&copy; 2024 Felipe Casagrande. Todos os direitos reservados.</p>
+        </div>
     </footer>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
