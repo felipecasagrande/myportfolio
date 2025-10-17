@@ -59,20 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Atualizar observer quando elementos são animados
-observer.observe = new Proxy(observer.observe, {
-    apply(target, thisArg, argumentsList) {
-        const element = argumentsList[0];
-        if (element instanceof Element) {
-            setTimeout(() => {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0) scale(1)';
-            }, 100);
-        }
-        return Reflect.apply(target, thisArg, argumentsList);
-    }
-});
-
 // Efeito de digitação para o título
 function typeWriter(element, text, speed = 100) {
     let i = 0;
@@ -117,6 +103,7 @@ backToTopButton.style.cssText = `
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 `;
 
 document.body.appendChild(backToTopButton);
@@ -137,5 +124,22 @@ backToTopButton.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
+    });
+});
+
+// Efeito de hover nos ícones dos projetos
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        const icon = this.querySelector('.project-icon');
+        if (icon) {
+            icon.style.transform = 'scale(1.2) rotate(5deg)';
+        }
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        const icon = this.querySelector('.project-icon');
+        if (icon) {
+            icon.style.transform = 'scale(1) rotate(0deg)';
+        }
     });
 });
